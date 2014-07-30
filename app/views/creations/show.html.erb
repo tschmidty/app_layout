@@ -1,0 +1,94 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @creation.name %>
+</p>
+
+<p>
+  <strong>Stage:</strong>
+  <%= @creation.stage %>
+</p>
+
+<p>
+  <strong>Revision:</strong>
+  <%= @creation.revision %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @creation.description %>
+</p>
+
+<p>
+  <strong>Created at:</strong>
+  <%= @creation.created_at %>
+</p>
+
+<p>
+  <strong>Updated at:</strong>
+  <%= @creation.updated_at %>
+</p>
+
+<p>
+  <strong>Project:</strong>
+  <%= @creation.project_id %>
+</p>
+
+<p>
+  <strong>File file name:</strong>
+  <%= @creation.file_file_name %>
+</p>
+
+<p>
+  <strong>File content type:</strong>
+  <%= @creation.file_content_type %>
+</p>
+
+<p>
+  <strong>File file size:</strong>
+  <%= @creation.file_file_size %>
+</p>
+
+<p>
+  <strong>File updated at:</strong>
+  <%= @creation.file_updated_at %>
+</p>
+
+<p>
+  <strong>Designer:</strong>
+  <%= @creation.designer_id %>
+</p>
+
+<p>
+  <strong>Hours:</strong>
+  <%= @creation.hours %>
+</p>
+
+<p>
+  <strong>Client:</strong>
+  <%= @creation.client_id %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @creation.status %>
+</p>
+
+<p>
+  <strong>Color space:</strong>
+  <%= @creation.color_space %>
+</p>
+
+<p>
+  <strong>Bleed:</strong>
+  <%= @creation.bleed %>
+</p>
+
+<p>
+  <strong>Estimate:</strong>
+  <%= @creation.estimate_id %>
+</p>
+
+<%= link_to 'Edit', edit_creation_path(@creation) %> |
+<%= link_to 'Back', creations_path %>

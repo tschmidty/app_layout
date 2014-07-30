@@ -10,7 +10,11 @@
 </head>
 <body>
   <%= render 'layouts/header' %>
-<%= yield %>
+  <%= image_tag("tagline.png",
+                alt: "Creative File Management Made Easy",
+                id: "tagline") %>
+  <div class="container">
+    <%= yield %>
 
 </body>
 </html>
