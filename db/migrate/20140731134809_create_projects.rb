@@ -1,0 +1,14 @@
+class CreateProjects < ActiveRecord::Migration
+  def change
+    create_table :projects do |t|
+      t.string :name
+      t.integer :campaign_id
+      t.datetime :created_at
+      t.datetime :updated_at
+      t.boolean :active
+      t.integer :client_id
+
+      t.timestamps
+    end
+  end
+end
