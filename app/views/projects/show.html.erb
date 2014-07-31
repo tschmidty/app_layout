@@ -1,34 +1,15 @@
-<p id="notice"><%= notice %></p>
+<% content_for :sidebar do %>
+  <section id='assigned_designers'>
+    <header><h1>Assigned Designers</h1></header>
+    <ul>
+      <%= render @project.designers %>
+    </ul>
+  </section>
+<% end %>
 
-<p>
-  <strong>Name:</strong>
-  <%= @project.name %>
-</p>
-
-<p>
-  <strong>Campaign:</strong>
-  <%= @project.campaign_id %>
-</p>
-
-<p>
-  <strong>Created at:</strong>
-  <%= @project.created_at %>
-</p>
-
-<p>
-  <strong>Updated at:</strong>
-  <%= @project.updated_at %>
-</p>
-
-<p>
-  <strong>Active:</strong>
-  <%= @project.active %>
-</p>
-
-<p>
-  <strong>Client:</strong>
-  <%= @project.client_id %>
-</p>
-
-<%= link_to 'Edit', edit_project_path(@project) %> |
-<%= link_to 'Back', projects_path %>
+<article>
+  <header>
+    <h1><%= @project.name %></h1>
+  </header>
+  <!-- Project information -->
+</article>

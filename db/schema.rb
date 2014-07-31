@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140730131150) do
+ActiveRecord::Schema.define(version: 20140731134809) do
 
   create_table "creations", force: true do |t|
     t.string   "name"
@@ -32,6 +32,15 @@ ActiveRecord::Schema.define(version: 20140730131150) do
     t.string   "color_space"
     t.integer  "bleed"
     t.integer  "estimate_id"
+  end
+
+  create_table "projects", force: true do |t|
+    t.string   "name"
+    t.integer  "campaign_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.boolean  "active"
+    t.integer  "client_id"
   end
 
 end
