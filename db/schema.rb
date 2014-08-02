@@ -11,7 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140731134809) do
+ActiveRecord::Schema.define(version: 20140802194240) do
+
+  create_table "campaigns", force: true do |t|
+    t.string   "name"
+    t.integer  "client_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.decimal  "cost"
+    t.date     "start_date"
+    t.date     "end_date"
+  end
 
   create_table "creations", force: true do |t|
     t.string   "name"

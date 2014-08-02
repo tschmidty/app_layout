@@ -1,4 +1,6 @@
 AppLayout::Application.routes.draw do
+  resources :campaigns
+
   resources :projects
 
   resources :creations

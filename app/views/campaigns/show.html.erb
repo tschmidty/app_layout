@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @campaign.name %>
+</p>
+
+<p>
+  <strong>Client:</strong>
+  <%= @campaign.client_id %>
+</p>
+
+<p>
+  <strong>Created at:</strong>
+  <%= @campaign.created_at %>
+</p>
+
+<p>
+  <strong>Updated at:</strong>
+  <%= @campaign.updated_at %>
+</p>
+
+<p>
+  <strong>Cost:</strong>
+  <%= @campaign.cost %>
+</p>
+
+<p>
+  <strong>Start date:</strong>
+  <%= @campaign.start_date %>
+</p>
+
+<p>
+  <strong>End date:</strong>
+  <%= @campaign.end_date %>
+</p>
+
+<%= link_to 'Edit', edit_campaign_path(@campaign) %> |
+<%= link_to 'Back', campaigns_path %>
