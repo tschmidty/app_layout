@@ -1,6 +1,8 @@
 AppLayout::Application.routes.draw do
+  devise_for :designers
+  
   resources :campaigns
-
+  resources :designers
   resources :projects
 
   resources :creations
