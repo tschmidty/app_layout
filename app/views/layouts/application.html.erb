@@ -35,6 +35,14 @@
     <%= yield %>
     </section>
     <section id="sidebar">
+      <nav id="functional_nav">
+        <ul>
+          <% if current_user && current_user.designer? %>
+          <li><%= link_to 'Add Creation', new_creation_path %></li>
+          <% end %>
+          <% yield :functional_nav %>
+        </ul>
+      </nav>
       <%= yield :sidebar %>
       <section id="recent_activity">
         <header><h1 class="ir" id="recent">Recent Activity</h1></header>

@@ -1,4 +1,7 @@
 AppLayout::Application.routes.draw do
+  devise_for :users
+  devise_for :clients
+  devise_for :admins
   devise_for :designers
   
   resources :campaigns
