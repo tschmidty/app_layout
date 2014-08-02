@@ -1,37 +1,5 @@
-<h1>Listing projects</h1>
+<h1>Projects</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Campaign</th>
-      <th>Created at</th>
-      <th>Updated at</th>
-      <th>Active</th>
-      <th>Client</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
+<% currently_at 'Projects' %>
 
-  <tbody>
-    <% @projects.each do |project| %>
-      <tr>
-        <td><%= project.name %></td>
-        <td><%= project.campaign_id %></td>
-        <td><%= project.created_at %></td>
-        <td><%= project.updated_at %></td>
-        <td><%= project.active %></td>
-        <td><%= project.client_id %></td>
-        <td><%= link_to 'Show', project %></td>
-        <td><%= link_to 'Edit', edit_project_path(project) %></td>
-        <td><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Project', new_project_path %>
+<%# STUB: This view is not covered in the chapter %>
