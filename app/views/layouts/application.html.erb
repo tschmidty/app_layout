@@ -21,6 +21,17 @@
                 id: "tagline") %>
   <div class="container">
     <section id="content">
+      <% if notice %>
+        <p class="notification notice">
+          <%= notice %>
+        </p>
+      <% end %>
+
+      <% if alert %>
+        <p class="notification alert">
+          <%= alert %>
+        </p>
+      <% end %>
     <%= yield %>
     </section>
     <section id="sidebar">
